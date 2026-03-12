@@ -46,16 +46,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* heading and nav custom font */
-h1, h2, h3, h4 ,h5, h6, nav{
-    font-family: "Lato"
-}
 
 body{
     line-height: 1.6;
     background-color: #f3f0e9;
+	margin: 0 auto;
+	max-width: 1200px;
+	font-family: "Karla"
 }
 
+/* heading and nav custom font added after body for cascading to overwrite body text for headings*/
+h1, h2, h3, h4 ,h5, h6, nav{
+    font-family: "Lato"
+}
+/* mobile heading and text sizes */
 h1{
     font-size: 2.027rem;
 }
@@ -66,18 +70,54 @@ h2{
 
 h3{
     font-size: 1.424rem;
+	color:#d69e3d;
 }
 
 p{
     font-size: 1rem;
 }
-
+/* adds appearence of uppercase without sacraficing issues with text actually being uppercase for accessibility */
 h1, h2, h3, h4, nav{
     text-transform:uppercase;
 }
 
-header h2{
-    text-transform: none;
+/* .logoimg{
+
+} */
+
+header{
+	background-color:#000000;
+}
+
+ul{
+	display:flex;
+	justify-content: center;
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.home{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url(/images/hero-background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 450px;
+	color:#ffffff;
+	background-color:#000000;
+	padding: 30px;
+	text-align: center;
+}
+
+img{
+	height:100%
 }
 
 /* tablet screen size styling */
