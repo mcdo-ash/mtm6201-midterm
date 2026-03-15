@@ -52,7 +52,7 @@ body{
     background-color: #f3f0e9;
 	margin: 0 auto;
 	max-width: 1200px;
-	font-family: "Karla"
+	font-family: "Karla";
 }
 
 /* heading and nav custom font added after body for cascading to overwrite body text for headings*/
@@ -82,8 +82,17 @@ h1, h2, h3, h4, nav{
     text-transform:uppercase;
 }
 
+button{
+	padding: 12px 22px 12px 22px;
+	text-transform: uppercase;
+	border: none;
+	font-weight: 800;
+	font-family: "Karla";
+}
+
 .logoimg{
-	padding: 15px
+	padding: 5px;
+	margin: 10px;
 } 
 
 header{
@@ -114,12 +123,6 @@ a:visited{
 	color:#ffffff;
 }
 
-
-.home::before{
-	background-color: rgba(0,0,0,0.);
-	
-}
-
 .home{
 	display: flex;
 	flex-direction: column;
@@ -129,6 +132,7 @@ a:visited{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-blend-mode: darken;
 	height: 450px;
 	color:#ffffff;
 	padding: 30px;
@@ -136,8 +140,52 @@ a:visited{
 }
 
 img{
-	height:100%
+	height:100%;
 }
+
+
+.cards{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	padding: 20px;
+	gap: 16px;
+}
+
+.card{
+	background-size: cover;
+	background-position: center;
+}
+
+.card1{
+	background-image:url(/images/latte.jpeg);
+	height:500px;
+	grid-row: 1/3;
+	grid-column: 1/3;
+}
+
+.card2{
+	background-image:url(/images/coffee-beans.jpeg);
+	height: 250px;
+}
+
+.card3{
+	background-image:url(/images/pouring-coffee.jpeg);
+	height: 250px;
+}
+
+.card4{
+	background-image:url(/images/three-cups.jpeg);
+	height: 250px;
+}
+
+.card5{
+	background-image:url(/images/smiling-employee.jpeg);
+	height: 250px;
+}
+
+
+
 
 /* tablet screen size styling */
 @media (min-width: 768px){
