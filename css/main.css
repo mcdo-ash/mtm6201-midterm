@@ -48,7 +48,7 @@ table {
 }
 
 body{
-    line-height: 1.6;
+    line-height: 1.4;
     background-color: #f3f0e9;
 	margin: 0 auto;
 	max-width: 1200px;
@@ -68,7 +68,7 @@ h1{
 h2{
     font-size: 1.802rem;
 	font-weight: 700;
-	padding: 5px 0px 30px 0px;
+	padding: 5px 0px 15px 0px;
 	line-height: 1.2
 }
 
@@ -91,6 +91,8 @@ button{
 	border: none;
 	font-weight: 800;
 	font-family: "Karla";
+	cursor: pointer;
+	margin-top: 20px;
 }
 
 img{
@@ -211,10 +213,44 @@ section{
 	gap: 50px;
 }
 
+.menuloc{
+	padding: 15px;
+	display:flex;
+	flex-direction: column;
+	gap: 10px;
+	text-align: center;
+	background-image:url(/images/coffee-shop.jpeg);
+	background-position: center;
+	background-size: cover;
+}
 
+.menuloc h2{
+	color: #ffffff;
+}
 
+.location button{
+	border: 1px solid #ffffff;
+	color:#ffffff;
+	background: none;
+}
 
+#about{
+	padding: 10px;
+}
 
+#aboutimg{
+	height:566px;
+}
+
+.aboutcontent button{
+	border: 1px solid #ffffff;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.aboutcontent p{
+	margin-bottom: 10px;
+}
 
 
 /* tablet screen size styling */
