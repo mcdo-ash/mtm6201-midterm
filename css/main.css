@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -96,7 +96,7 @@ button{
 }
 
 img{
-	height:150px
+	width: 100%;
 }
 
 .logoimg{
@@ -135,6 +135,7 @@ a:visited{
 
 section{
 	margin-top: 50px;
+	padding-top: 20px;
 }
 
 .home{
@@ -213,6 +214,10 @@ section{
 	gap: 50px;
 }
 
+.icon{
+	height: 150px;
+}
+
 .menuloc{
 	padding: 15px;
 	display:flex;
@@ -252,6 +257,47 @@ section{
 	margin-bottom: 10px;
 }
 
+.testimonials{
+	padding: 10px;
+	background-color:#000000;
+	color: #ffffff;
+}
+
+.testcards{
+	display: grid;
+}
+
+.jane{
+	position:absolute;
+}
+
+.janeimg{
+	opacity: 0.7;
+	position:absolute;
+}
+
+.scott{
+	opacity: 0.7;
+	position: fixed;
+}
+
+footer{
+	background-color: #000000;
+	color:#ffffff;
+	margin: 0px;
+	padding: 10px;
+	text-align: center;
+}
+
+footer p{
+	padding: 8px 0 30px;
+}
+
+hr{
+	margin: 0;
+	padding: 0;
+	
+}
 
 /* tablet screen size styling */
 @media (min-width: 768px){
