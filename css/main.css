@@ -64,22 +64,17 @@ h1{
     font-size: 2.027rem;
 	font-weight: 800;
 }
-/* font weight changed in these h styles to make it bolder, custom line height to adjust for some of the mockup details */
+/* color applied to h2 with custom font size */
 h2{
     font-size: 1.802rem;
+	color:#d69e3d;
+}
+/* font weight changed in these h styles to make it bolder, custom line height to adjust for some of the mockup details */
+h3{
+    font-size: 1.2rem;
 	font-weight: 700;
 	padding: 5px 0px 15px 0px;
 	line-height: 1.2
-}
-/* color applied to h3 and h5 to match mockup */
-h3{
-    font-size: 1.2rem;
-	color:#d69e3d;
-}
-
-h5{
-	text-transform: uppercase;
-	color:#d69e3d
 }
 
 p{
@@ -90,22 +85,27 @@ h1, h2, h3, h4, nav{
     text-transform:uppercase;
 }
 /* button styling and transition properties */
-button{
+.button{
 	padding: 12px 22px 12px 22px;
 	text-transform: uppercase;
 	border: none;
 	font-weight: 800;
 	font-family: "Karla";
 	cursor: pointer;
-	margin-top: 20px;
-	transition: all 0.5s
+	margin-top: 5px;
+	transition: all 0.5s;
+	border: 1px solid #ffffff;
+	background-color: #ffffff;
+	color:#000000;
+	align-self: center;
+	flex-grow: 0;
 }
 /* button hover and focus states */
-button:hover{
+.button:hover{
 	color:#d69e3d
 }
 
-button:focus{
+.aboutcontent:focus{
 	color:#d69e3d
 }
 /* images given a width of 100% so they fit their containers */
@@ -193,13 +193,9 @@ section{
 	position:absolute;
 	padding:30px;
 	z-index: 4;
-	margin-top:-500px;
+	margin-top:-700px;
+	gap: 10px;
 }
-
-.homecon button{
-	margin: 30px 130px 0 130px;
-}
-
 
 .welcome{
 	padding: 10px;
@@ -271,34 +267,58 @@ section{
 }
 
 .menulocimg{
-	opacity: 0.6;
+	opacity: 0.4;
 }
 
 .menuloccon{
 	position:absolute;
 	display:flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	text-align: center;
-	gap:2px;
 	margin-top:-320px;
-	margin-left: 10px;
+	margin-left: 150px;
+	gap: 15px;
 }
 
 
-.menuloc h2{
+.menuloc h3{
 	color: #ffffff;
 }
+
+#menu{
+	display:flex;
+	flex-direction: column;
+}
+
+#location{
+	display:flex;
+	flex-direction: column;
+}
 /* attempting to make the location button transparent to match the */
-.location button{
-	border: 1px solid #ffffff;
-	color:#ffffff;
+#location .button{
 	background-color:transparent;
+	color:#ffffff
+}
+
+#location .button:hover{
+	color:#d69e3d;
+}
+
+#location .button:focus{
+	color:#d69e3d;
 }
 
 #about{
 	padding: 10px;
+}
+
+.aboutcontent{
+	display:flex;
+	flex-direction: column;
+}
+
+.aboutcontent .button{
+	align-self: flex-start;
 }
 
 .aboutcontent button:hover{
@@ -313,10 +333,18 @@ section{
 	height:566px;
 }
 
-.aboutcontent button{
+.aboutcontent .button{
 	border: 1px solid #ffffff;
 	background-color: #000000;
 	color: #ffffff;
+}
+
+.aboutcontent .button:hover{
+	color:#d69e3d;
+}
+
+.aboutcontent .button:focus{
+	color:#d69e3d;
 }
 
 .aboutcontent p{
@@ -382,11 +410,11 @@ hr{
 	}
 
 	h2{
-		font-size:2.488rem;
+		font-size:1.2rem;
 	}
 
 	h3{
-		font-size:1.2rem;
+		font-size:2.488rem;
 	}
 
 	p{
@@ -484,11 +512,11 @@ hr{
 	}
 
 	h2{
-		font-size:2.052rem;
+		font-size:1.253rem;
 	}
 
 	h3{
-		font-size:1.253rem;
+		font-size:2.052rem;
 	}
 
 	p{
