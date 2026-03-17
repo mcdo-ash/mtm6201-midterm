@@ -117,7 +117,14 @@ img{
 	padding: 10px;
 	margin: 10px;
 	height: 30px;
+	transition: transform 0.5s;
 } 
+
+.logoimg:hover{
+	transform: scale(1.5);
+}
+
+
 /* nav with logo displayed flex in column to put it on top of nav list  */
 header{
 	background-color:#000000;
@@ -427,7 +434,6 @@ hr{
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 1fr 1fr;
 		justify-content: left;
-		align-items: left;
 		text-align: center;
 	}
 
