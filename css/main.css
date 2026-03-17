@@ -190,7 +190,7 @@ section{
 }
 
 .homecon button{
-	margin: 30px 100px 0 100px;
+	margin: 30px 130px 0 130px;
 }
 
 
@@ -257,24 +257,37 @@ section{
 }
 
 .menuloc{
-	padding: 15px;
+	position:relative;
+	background-color: #000000;
+	padding-top:0;
+
+}
+
+.menulocimg{
+	opacity: 0.6;
+}
+
+.menuloccon{
+	position:absolute;
 	display:flex;
 	flex-direction: column;
-	gap: 10px;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
-	background-image:url(/images/coffee-shop.jpeg);
-	background-position: center;
-	background-size: cover;
+	gap:2px;
+	margin-top:-320px;
+	margin-left: 10px;
 }
+
 
 .menuloc h2{
 	color: #ffffff;
 }
-
+/* attempting to make the location button transparent to match the */
 .location button{
 	border: 1px solid #ffffff;
 	color:#ffffff;
-	background: none;
+	background-color:transparent;
 }
 
 #about{
@@ -373,6 +386,8 @@ hr{
 		font-size:1rem;
 	}
 
+	
+
 	.cards{
 	grid-template-columns: repeat(11, 1fr);
 	grid-template-rows: 1fr 1fr;
@@ -433,9 +448,11 @@ hr{
 		justify-self: center;
 	}
 
-	.menuloc{
+	.menuloccon{
 		flex-direction: row;
 		padding: 50px;
+		margin-top:-450px;
+		margin-left:0px;
 	}
 
 	#about{
@@ -450,7 +467,7 @@ hr{
 
 	.testcards{
 		display:flex;
-		
+		flex-direction: row;
 	}
 }
 /* desktop screen size styling */
@@ -493,7 +510,7 @@ hr{
 	}
 
 	.home{
-		padding:80px;
+		padding: 0px;
 	}
 
 	.offer{
