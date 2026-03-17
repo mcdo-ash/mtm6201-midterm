@@ -382,6 +382,16 @@ hr{
 		flex-direction: row;
 		padding: 50px;
 	}
+
+	#about{
+		display:flex;
+		gap: 15px;
+	}
+	
+	#aboutimg{
+		height:500px;
+		width: 400px;
+	}
 }
 /* desktop screen size styling */
 @media (min-width: 1100px){
