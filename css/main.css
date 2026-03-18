@@ -67,7 +67,7 @@ h1{
 /* color applied to h2 with custom font size */
 h2{
     font-size: 1.802rem;
-	color:#d69e3d;
+	color:#966f2c;
 }
 /* font weight changed in these h styles to make it bolder, custom line height to adjust for some of the mockup details */
 h3{
@@ -159,7 +159,7 @@ a:link{
 }
 /* by making this color inherit, there is no longer a different color when you have visited a link */
 a:visited{
-	color: inherit;
+	color:inherit ;
 }
 /* so sections have some room between, margin and padding top applied. */
 section{
