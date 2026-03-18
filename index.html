@@ -11,7 +11,7 @@
     <title>Midterm Project</title>
 </head>
 <body>
-    <!-- this adds skip links -->
+    <!-- skip links for accesibility -->
     <div class="skip">
         <ul class="skiplinks">
             <li><a href="#about">About Us</a></li>
@@ -19,8 +19,9 @@
             <li><a href="#location">Locations</a></li>
         </ul>
     </div>
-
+    <!-- main destinations on site given roles for aria accesibility -->
     <header role="banner">
+        <!-- logo image given scale for animation and unique class for custom sizing-->
         <img class="scale logoimg" src="./images/my-coffee-shop-logo.svg" alt="my coffee shop logo">
         <nav role="navigation">
             <ul>
@@ -31,14 +32,18 @@
         </nav>
     </header>
     <main role="main">
+        <!-- sections given class for general styling such as padding that will affect the whole section -->
         <section class="home">
+            <!-- image placed into div apart from content in order to manipulate both individually and since content will sit overtop image which needs to have its opacity turned down -->
             <div class="heroimg">x
                 <img src="./images/hero-background.jpg" alt="barista at work">
             </div>
             <div class="homecon">
                 <h1 role="heading">Experience coffee like never before</h1>
                 <P>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</P>
+                <!-- buttons placed into divs with anchor links in order to style them with less restrictions than the <button> tag -->
                 <div class="button">
+                    <!-- aria labels placed onto button links for accessibile explanations of what buttons do -->
                     <a aria-label="navigate to menu" href="#">
                         Explore our menu
                     </a>
@@ -47,8 +52,10 @@
         </section>
         <section class="welcome">
             <h2>Welcome to My Coffee House</h2>
-            <h3>EXPERIENCE A NEW WAY TO TASTE COFFEE</h3>
+            <h3 role="heading">EXPERIENCE A NEW WAY TO TASTE COFFEE</h3>
+            <!-- div with class of cards to effect how cards will change based on screen size using grid-->
             <div class="cards">
+                <!-- cards given class of card for styles that will effect all cards and each of them with card1-5 to change where each card sits in grid -->
                 <div class="card card1"></div>
                 <div class="card card2"></div>
                 <div class="card card3"></div>
@@ -58,33 +65,37 @@
         </section>
         <section class="offers">
             <h2>What we offer</h2>
-            <h3>Why visit us?</h3>
+            <h3 role="heading">Why visit us?</h3>
+            <!-- offer content placed in divs, they will be manipulated by grid and change based on screen size. -->
         <div class="offer">
+            <!-- each offer given unique role for the three different placements on grid for each different screen size -->
             <div class="fair">
                 <img class="icon" src="./images/fair-trade.svg" alt="fair trade coffee">
-                <h3>Fair Trade Coffee</h3>
+                <h3 role="heading">Fair Trade Coffee</h3>
                 <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
             </div>
             <div class="local">
                 <img class="icon" src="./images/local-baked-goods.svg" alt="baked goods">
-                <h3>Local Baked Goods</h3>
+                <h3 role="heading">Local Baked Goods</h3>
                 <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
             </div>
             <div class="love">
                 <img class="icon" src="./images/made-with-love.svg" alt="mug with heart on it">
-                <h3>Made with love</h3>
+                <h3 role="heading">Made with love</h3>
                 <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
             </div>
         </div>
         </section>
         <section class="menuloc">
+            <!-- image placed in div seperate from content since image will be background and content put on top -->
             <div class="menulocimg">
                 <img src="./images/coffee-shop.jpeg" alt="coffee shop">
             </div>
+            <!-- both menu and location in one div to for flex to put them top to bottom on mobile and left to right in tablet and desktop screens -->
             <div class="menuloccon">
                 <div id="menu">
                     <h2>Our Menu</h2>
-                    <h3>Explore what we have to offer you</h3>
+                    <h3 role="heading">Explore what we have to offer you</h3>
                     <div class="button">
                         <a aria-label="navigate to menu" href="#">
                         Explore our menu
@@ -93,7 +104,7 @@
                 </div>
                 <div id="location">
                     <h2>Locations</h2>
-                    <h3>Find your nearest coffee shop</h3>
+                    <h3 role="heading">Find your nearest coffee shop</h3>
                     <div class="button">
                         <a aria-label="navigate to location details" href="#">
                         View locations
@@ -103,6 +114,7 @@
             </div>
         </section>
         <section id="about">
+            <!-- image placed seperate from content because the about section will be in flex for the same top to bottom arrangement on mobile and then left to right on tablet and desktop -->
             <div class="aboutpic">
                 <img id="aboutimg" src="./images/about-us.jpeg" alt="barista preparing espresso">
             </div>
@@ -118,6 +130,7 @@
                 </div>
             </div>
         </section>
+        <!-- testimonials placed in cards with images seperate so the content can be placed overtop the image. flex will be applied with extra padding and margin on tablet and desktop screen stylings. -->
         <section class="testimonials">
             <h2>Testimonials</h2>
             <h3>What our customers say about us</h3>
@@ -152,6 +165,7 @@
             </div>
         </section>
     </main>
+    <!-- footer has horizontal rule that breaks the content from the main section from the footer. -->
     <footer role="contentinfo">
         <hr>
         <p>© My Coffee Company 2024</p>
