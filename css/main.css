@@ -491,7 +491,7 @@ hr{
 }
 /* desktop screen size styling */
 @media (min-width: 1100px){
-
+	/* desktop font sizes */
 	h1{
 		font-size:3.815rem;
 	}
@@ -507,39 +507,39 @@ hr{
 	p{
 		font-size:1rem;
 	}
-
+	/* header put in flex with direction row so it reads left to right rather than top to bottom like mobile and tablet screens. */
 	header{
 		display:flex;
 		flex-direction: row;
 	}
-
+	/* logo image size adjusted to fit in nav bar better on desktop. */
 	.logoimg{
 		height:22px;
 	}
-	
+	/* nav list spacing adjusted to fit with header/nav bar. */
 	ul{
 		gap: 60px;
 		justify-content: center;
 		margin: 20px 100px 10px 0px;
 		padding-bottom:0;
 	}
-
+	/* because the first nav item has 2 words, it was going one word on top of the other, using white-space: nowrap, it flattens out to one line. */
 	ul:first-child{
 		white-space: nowrap;
 	}
-
+	/* home padding removed to adjust spacing issues. */
 	.home{
 		padding: 0px;
 	}
-
+	/* offers in flex rather than grid because on desktop it is left to right rather than top to bottom or triangular. */
 	.offer{
 		display:flex;
 	}
-
+	/* about margin adjusted to have space around section. */
 	#about{
 		margin:90px;
 	}
-
+	/* testimonials padding adjusted because it has background color. this way it has the same time of spacing as about but fits with background color. */
 	.testimonials{
 		padding:90px;
 	}
