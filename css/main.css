@@ -84,7 +84,7 @@ p{
 h1, h2, h3, h4, nav{
     text-transform:uppercase;
 }
-/* button styling and transition properties */
+/* button given padding and margin to the top for spacing, the text transformed into uppercase. font family and weight applied for appearence. transition added for hover state. border and background color for button style. */
 .button{
 	padding: 12px 22px 12px 22px;
 	text-transform: uppercase;
@@ -98,7 +98,6 @@ h1, h2, h3, h4, nav{
 	background-color: #ffffff;
 	color:#000000;
 	align-self: center;
-	flex-grow: 0;
 }
 /* button hover and focus states */
 .button:hover{
@@ -112,20 +111,20 @@ h1, h2, h3, h4, nav{
 img{
 	width:100%
 }
-/* custom size for logo so it fits with mockup */
+/* custom size for logo so it fits with mockup. transition applied for scale animation */
 .logoimg{
 	padding: 10px;
 	margin: 10px;
 	height: 30px;
 	transition: transform 0.5s;
 } 
-
+/* on hover, the logo of my coffee shop increases in size */
 .logoimg:hover{
 	transform: scale(1.5);
 }
 
 
-/* nav with logo displayed flex in column to put it on top of nav list  */
+/* nav with logo displayed flex in column to put it on top of nav list, items centered  */
 header{
 	background-color:#000000;
 	display: flex;
@@ -133,7 +132,7 @@ header{
 	align-items: center;
 
 }
-/* nav ul displayed flex to control how nav items appear in header */
+/* nav ul displayed flex to control how nav items appear in header, items centered with padding on the bottom for spacing. gap of 30px to space items apart */
 ul{
 	display:flex;
 	justify-content: center;
@@ -149,43 +148,38 @@ li a:hover{
 li a:focus{
 	color:#d69e3d;
 }
-
-/* removes underline on nav links since they're the only anchor tags */
+/* removes underline on links */
 a{
 	text-decoration: none;
 	font-weight: 800;
 }
-
 /* makes links always stay white even after they've been clicked */
 a:link{
 	color:#ffffff;
 }
-
+/* by making this color inherit, there is no longer a different color when you have visited a link */
 a:visited{
 	color: inherit;
 }
-
+/* so sections have some room between, margin and padding top applied. */
 section{
 	margin-top: 50px;
 	padding-top: 20px;
 }
-
+/* position relative so text can sit over top with z-index. margins and padding set to 0 for spacing. background color as black for when the image has lowered opacity. color of white for the text. */
 .home{
 	position:relative;
-	margin-top:0px;
-	margin-bottom:0px;
 	padding:0px;
 	margin:0px;
 	color:#ffffff;
 	background-color: #000000;
 }
-
+/* negative z-index so content can sit overtop image, opacity brought down for content readability (and to match mockup) */
 .heroimg{
 	z-index: -1;
 	opacity: 0.4;
-
 }
-
+/* content displayed flex in column with a position absolute and a higher z-index so it sits overtop the image with the negative margin top. padding of 250 so the text sits tightly in the center */
 .homecon{
 	display:flex;
 	flex-direction: column;
@@ -200,26 +194,26 @@ section{
 .welcome{
 	padding: 10px;
 }
-
+/* cards displayed grid with 2(technically 3) columns and rows and a gap of 16 for spacing */
 .cards{
 	display:grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	gap: 16px;
 }
-
+/* background size and position for all cards set with a class that is set on all cards */
 .card{
 	background-size: cover;
 	background-position: center;
 }
-
+/* cards have image applied as a css background. for mobile, only the first card is given grid row/column positions and the rest of the cards fit into place */
 .card1{
 	background-image:url(/images/latte.jpeg);
 	height:500px;
 	grid-row: 1/3;
 	grid-column: 1/3;
 }
-
+/* cards 2-5 given a height of half the height of the first card */
 .card2{
 	background-image:url(/images/coffee-beans.jpeg);
 	height:250px;
@@ -239,12 +233,12 @@ section{
 	background-image:url(/images/smiling-employee.jpeg);
 	height:250px;
 }
-
+/* section given padding and text centered */
 .offers{
 	padding:0px 0px 0px 10px;
 	text-align: center;
 }
-
+/* offer icons and content displayed in grid and centered, padding and gap applied for spacing*/
 .offer{
 	padding: 10px;
 	display:grid;
@@ -254,22 +248,22 @@ section{
 	padding: 50px;
 	gap: 50px;
 }
-
+/* icon given a set height so it fits nicely in all screen sizes */
 .icon{
 	height: 150px;
 }
-
+/* menu and location section also given positon relative so content can go overtop. padding top is 0 for spacing and background color is black also for when the opacity is set down on image */
 .menuloc{
 	position:relative;
 	background-color: #000000;
 	padding-top:0;
 
 }
-
+/* image opacity for blending */
 .menulocimg{
 	opacity: 0.4;
 }
-
+/* menu and location content given position absolute so it sits on top of the image. displayed flex in column so the sizes of each items can be manipulated. margin top negative so it can sit on image. margin left is for a strange spacing issue. gap is also for the contents spacing */
 .menuloccon{
 	position:absolute;
 	display:flex;
@@ -280,11 +274,11 @@ section{
 	gap: 15px;
 }
 
-
+/* this h3 sits on a darker background so it needs to be in white */
 .menuloc h3{
 	color: #ffffff;
 }
-
+/* menu and location content in flex with column for top to bottom */
 #menu{
 	display:flex;
 	flex-direction: column;
@@ -294,12 +288,12 @@ section{
 	display:flex;
 	flex-direction: column;
 }
-/* attempting to make the location button transparent to match the */
+/* location button in mockup is transparent */
 #location .button{
 	background-color:transparent;
 	color:#ffffff
 }
-
+/* the location button no longer had hover and focus states when the transparency was applied, this fixes that. */
 #location .button:hover{
 	color:#d69e3d;
 }
@@ -311,69 +305,63 @@ section{
 #about{
 	padding: 10px;
 }
-
+/* about content given flex with column mainly for the button sizing, as all other content fits. */
 .aboutcontent{
 	display:flex;
 	flex-direction: column;
 }
-
-.aboutcontent .button{
-	align-self: flex-start;
-}
-
-.aboutcontent button:hover{
-	color:#d69e3d
-}
-
-.aboutcontent button:focus{
-	color:#d69e3d
-}
-
-#aboutimg{
-	height:566px;
-}
-
+/* about button is black with white text because it sits on white background. */
 .aboutcontent .button{
 	border: 1px solid #ffffff;
 	background-color: #000000;
 	color: #ffffff;
 }
 
+/* makes button sit on the flex start rather than following the centered alignment */
+.aboutcontent .button{
+	align-self: flex-start;
+}
+/* about button was given different styling, so its hover and focus states also stopped working, this fixes that. */
 .aboutcontent .button:hover{
-	color:#d69e3d;
+	color:#d69e3d
 }
 
 .aboutcontent .button:focus{
-	color:#d69e3d;
+	color:#d69e3d
 }
-
+/* about image given specific height to make it fit with content */
+#aboutimg{
+	height:566px;
+}
+/* this makes the paragraphs in the about content more spaced out rather than sitting directly on one another */
 .aboutcontent p{
 	margin-bottom: 10px;
 }
 
+/* gives testimonials section black background with white text */
 .testimonials{
 	padding: 10px;
 	background-color:#000000;
 	color: #ffffff;
 }
-
+/* textcards in flex because they only sit top to bottom or left to right in different screen sizes. gap puts space between flex items(cards) */
 .testcards{
 	display:flex;
 	flex-direction: column;
 	gap: 15px;
 }
-
+/* testimonial cards all have test class and position relative with z-index so the content will sit on top of images */
 .test{
 	position: relative;
 	z-index: 1;
 }
-
+/* z-index is negative so the content goes over top, opacity is turned down for the testimonials to ledgible, height percentage turned down so the card fits closer to the mockup(as much as I am capable of) */
 .tImg{
 	z-index: -1;
 	opacity:0.65;
 	height: 70%;
 }
-
+/* content has absolute position with higher z-index so it overlaps the image. bottom, padding and margin added for spacing. */
 .con{
 	position:absolute;
 	z-index: 5;
@@ -381,7 +369,7 @@ section{
 	padding:10px;
 	margin: 4px;
 }
-
+/* footer given black background color, white text color, and text is centered. margin and padding for spacing. */
 footer{
 	background-color: #000000;
 	color:#ffffff;
@@ -389,11 +377,11 @@ footer{
 	padding: 10px;
 	text-align: center;
 }
-
+/* changing the padding of the footer padding to fit mockup */
 footer p{
 	padding: 8px 0 30px;
 }
-
+/* the horizontal rule that breaks up the footer and testimonials section given 0 padding and margin to fix the gap that would happen without this fix */
 hr{
 	margin: 0;
 	padding: 0;
@@ -420,8 +408,6 @@ hr{
 	p{
 		font-size:1rem;
 	}
-
-	
 
 	.cards{
 	grid-template-columns: repeat(11, 1fr);
