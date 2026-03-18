@@ -111,6 +111,26 @@ h1, h2, h3, h4, nav{
 img{
 	width:100%
 }
+/* styling skip links so they are not visable when first opening site. */
+.skiplinks{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skiplinks a{
+	position: absolute;
+	top: -3em;
+	background-color:#ffffff;
+	color:#000000;
+	padding: .5em 1em;
+	font-weight:bold;
+}
+/* this brings skip links into viewport */
+.skiplinks a:focus{
+	top: 0;
+}
+
 /* custom size for logo so it fits with mockup. transition applied for scale animation */
 .logoimg{
 	padding: 10px;
