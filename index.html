@@ -1,174 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Midterm Project</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- skip links for accesibility -->
     <div class="skip">
-        <ul class="skiplinks">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#location">Locations</a></li>
-        </ul>
+      <ul class="skiplinks">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#location">Locations</a></li>
+      </ul>
     </div>
     <!-- main destinations on site given roles for aria accesibility -->
     <header role="banner">
-        <!-- logo image given scale for animation and unique class for custom sizing-->
-        <img class="scale logoimg" src="./images/my-coffee-shop-logo.svg" alt="my coffee shop logo">
-        <nav role="navigation">
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#location">Locations</a></li>
-            </ul>
-        </nav>
+      <!-- logo image given scale for animation and unique class for custom sizing-->
+      <img
+        class="scale logoimg"
+        src="./images/my-coffee-shop-logo.svg"
+        alt="my coffee shop logo"
+      />
+      <nav role="navigation">
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#location">Locations</a></li>
+        </ul>
+      </nav>
     </header>
     <main role="main">
-        <!-- sections given class for general styling such as padding that will affect the whole section -->
-        <section class="home">
-            <!-- image placed into div apart from content in order to manipulate both individually and since content will sit overtop image which needs to have its opacity turned down -->
-            <div class="heroimg">x
-                <img src="./images/hero-background.jpg" alt="barista at work">
-            </div>
-            <div class="homecon">
-                <h1 aria-level="1">Experience coffee like never before</h1>
-                <P>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</P>
-                <!-- buttons placed into divs with anchor links in order to style them with less restrictions than the <button> tag -->
-                <div class="button">
-                    <!-- aria labels placed onto button links for accessibile explanations of what buttons do -->
-                    <a aria-label="navigate to menu" href="#">
-                        Explore our menu
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="welcome">
-            <h2 aria-level="2">Welcome to My Coffee House</h2>
-            <h3 aria-level="3">EXPERIENCE A NEW WAY TO TASTE COFFEE</h3>
-            <!-- div with class of cards to effect how cards will change based on screen size using grid-->
-            <div class="cards">
-                <!-- cards given class of card for styles that will effect all cards and each of them with card1-5 to change where each card sits in grid -->
-                <div class="card card1"></div>
-                <div class="card card2"></div>
-                <div class="card card3"></div>
-                <div class="card card4"></div>
-                <div class="card card5"></div>
-            </div>
-        </section>
-        <section class="offers">
-            <h2 aria-level="2">What we offer</h2>
-            <h3 aria-level="3">Why visit us?</h3>
-            <!-- offer content placed in divs, they will be manipulated by grid and change based on screen size. -->
+      <!-- sections given class for general styling such as padding that will affect the whole section -->
+      <section class="home">
+        <!-- image placed into div apart from content in order to manipulate both individually and since content will sit overtop image which needs to have its opacity turned down -->
+        <div class="heroimg">
+          x
+          <img src="./images/hero-background.jpg" alt="barista at work" />
+        </div>
+        <div class="homecon">
+          <h1 aria-level="1">Experience coffee like never before</h1>
+          <p>
+            We craft more than beverages; we curate memories, one flavorful
+            moment at a time. Embrace the aroma and let every visit be a chapter
+            in your coffee story.
+          </p>
+          <!-- buttons placed into divs with anchor links in order to style them with less restrictions than the <button> tag -->
+          <div class="button">
+            <!-- aria labels placed onto button links for accessibile explanations of what buttons do -->
+            <a aria-label="navigate to menu" href="#"> Explore our menu </a>
+          </div>
+        </div>
+      </section>
+      <section class="welcome">
+        <h2 aria-level="2">Welcome to My Coffee House</h2>
+        <h3 aria-level="3">EXPERIENCE A NEW WAY TO TASTE COFFEE</h3>
+        <!-- div with class of cards to effect how cards will change based on screen size using grid-->
+        <div class="cards">
+          <!-- cards given class of card for styles that will effect all cards and each of them with card1-5 to change where each card sits in grid -->
+          <div class="card card1"></div>
+          <div class="card card2"></div>
+          <div class="card card3"></div>
+          <div class="card card4"></div>
+          <div class="card card5"></div>
+        </div>
+      </section>
+      <section class="offers">
+        <h2 aria-level="2">What we offer</h2>
+        <h3 aria-level="3">Why visit us?</h3>
+        <!-- offer content placed in divs, they will be manipulated by grid and change based on screen size. -->
         <div class="offer">
-            <!-- each offer given unique role for the three different placements on grid for each different screen size -->
-            <div class="fair">
-                <img class="icon" src="./images/fair-trade.svg" alt="fair trade coffee">
-                <h3 aria-level="3">Fair Trade Coffee</h3>
-                <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
+          <!-- each offer given unique role for the three different placements on grid for each different screen size -->
+          <div class="fair">
+            <img
+              class="icon"
+              src="./images/fair-trade.svg"
+              alt="fair trade coffee"
+            />
+            <h3 aria-level="3">Fair Trade Coffee</h3>
+            <p>
+              We build direct relationships with the farmers and producers who
+              help in the development of delicious, sustainable and organic
+              coffee.
+            </p>
+          </div>
+          <div class="local">
+            <img
+              class="icon"
+              src="./images/local-baked-goods.svg"
+              alt="baked goods"
+            />
+            <h3 aria-level="3">Local Baked Goods</h3>
+            <p>
+              We use local products to bake our goods and bring in a variety of
+              treats from local bakers with our community.
+            </p>
+          </div>
+          <div class="love">
+            <img
+              class="icon"
+              src="./images/made-with-love.svg"
+              alt="mug with heart on it"
+            />
+            <h3 aria-level="3">Made with love</h3>
+            <p>
+              We value our customers and make it our priority to serve everyone
+              with respect and a friendly smile to start their day of right.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="menuloc">
+        <!-- image placed in div seperate from content since image will be background and content put on top -->
+        <div class="menulocimg">
+          <img src="./images/coffee-shop.jpeg" alt="coffee shop" />
+        </div>
+        <!-- both menu and location in one div to for flex to put them top to bottom on mobile and left to right in tablet and desktop screens -->
+        <div class="menuloccon">
+          <div id="menu">
+            <h2 aria-level="2">Our Menu</h2>
+            <h3 aria-level="3">Explore what we have to offer you</h3>
+            <div class="button">
+              <a aria-label="navigate to menu" href="#"> Explore our menu </a>
             </div>
-            <div class="local">
-                <img class="icon" src="./images/local-baked-goods.svg" alt="baked goods">
-                <h3 aria-level="3">Local Baked Goods</h3>
-                <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+          </div>
+          <div id="location">
+            <h2 aria-level="2">Locations</h2>
+            <h3 aria-level="3">Find your nearest coffee shop</h3>
+            <div class="button">
+              <a aria-label="navigate to location details" href="#">
+                View locations
+              </a>
             </div>
-            <div class="love">
-                <img class="icon" src="./images/made-with-love.svg" alt="mug with heart on it">
-                <h3 aria-level="3">Made with love</h3>
-                <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <!-- image placed seperate from content because the about section will be in flex for the same top to bottom arrangement on mobile and then left to right on tablet and desktop -->
+        <div class="aboutpic">
+          <img
+            id="aboutimg"
+            src="./images/about-us.jpeg"
+            alt="barista preparing espresso"
+          />
+        </div>
+        <div class="aboutcontent">
+          <h2 aria-level="2">About Us</h2>
+          <h3 aria-level="3">Read our story</h3>
+          <p>
+            In the heart of our community, My Coffee House emerged as a humble
+            local coffee shop that sought to redefine the coffee experience.
+            Founded with a passion for quality brews and a commitment to
+            fostering genuine connections, we embarked on this journey with a
+            vision to create a warm and inviting space for coffee enthusiasts
+            and casual patrons alike.
+          </p>
+          <p>
+            My Coffee House quickly became a cherished gathering spot, where the
+            rich aroma of freshly ground coffee beans mingled with the laughter
+            of friends and the tapping of keyboards from those seeking a cozy
+            workspace.
+          </p>
+          <div class="button">
+            <a aria-label="gives more information on our story" href="#">
+              Learn more
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- testimonials placed in cards with images seperate so the content can be placed overtop the image. flex will be applied with extra padding and margin on tablet and desktop screen stylings. -->
+      <section class="testimonials">
+        <h2 aria-level="2">Testimonials</h2>
+        <h3 aria-level="3">What our customers say about us</h3>
+        <div class="testcards">
+          <div class="test">
+            <div class="tImg">
+              <img src="./images/testimonial-1.jpeg" alt="Jane D" />
             </div>
-        </div> 
-        </section>
-        <section class="menuloc">
-            <!-- image placed in div seperate from content since image will be background and content put on top -->
-            <div class="menulocimg">
-                <img src="./images/coffee-shop.jpeg" alt="coffee shop">
+            <div class="con">
+              <p>
+                "I always make a point to visit My Coffee Company when in
+                Ottawa. Delicious coffee and friendly service."
+              </p>
+              <h2 aria-level="2">Jane D., Toronto</h2>
             </div>
-            <!-- both menu and location in one div to for flex to put them top to bottom on mobile and left to right in tablet and desktop screens -->
-            <div class="menuloccon">
-                <div id="menu">
-                    <h2 aria-level="2">Our Menu</h2>
-                    <h3 aria-level="3">Explore what we have to offer you</h3>
-                    <div class="button">
-                        <a aria-label="navigate to menu" href="#">
-                        Explore our menu
-                        </a>
-                    </div>
-                </div>
-                <div id="location">
-                    <h2 aria-level="2">Locations</h2>
-                    <h3 aria-level="3">Find your nearest coffee shop</h3>
-                    <div class="button">
-                        <a aria-label="navigate to location details" href="#">
-                        View locations
-                        </a>
-                    </div>
-                </div>
+          </div>
+          <div class="test">
+            <div class="tImg">
+              <img src="./images/testimonial-2.jpeg" alt="Scott S" />
             </div>
-        </section>
-        <section id="about">
-            <!-- image placed seperate from content because the about section will be in flex for the same top to bottom arrangement on mobile and then left to right on tablet and desktop -->
-            <div class="aboutpic">
-                <img id="aboutimg" src="./images/about-us.jpeg" alt="barista preparing espresso">
+            <div class="con">
+              <p>
+                "Great atmosphere to get some work done while enjoying a cup or
+                two of incredible coffee."
+              </p>
+              <h2 aria-level="2">Scott S., Ottawa</h2>
             </div>
-            <div class="aboutcontent">
-                <h2 aria-level="2">About Us</h2>
-                <h3 aria-level="3">Read our story</h3>
-                <p>In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike. </p>
-                <p>My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
-                <div class="button">
-                    <a aria-label="gives more information on our story" href="#">
-                    Learn more
-                    </a>
-                </div>
+          </div>
+          <div class="test">
+            <div class="tImg">
+              <img src="./images/testimonial-3.jpeg" alt="Susie F" />
             </div>
-        </section>
-        <!-- testimonials placed in cards with images seperate so the content can be placed overtop the image. flex will be applied with extra padding and margin on tablet and desktop screen stylings. -->
-        <section class="testimonials">
-            <h2 aria-level="2">Testimonials</h2>
-            <h3 aria-level="3">What our customers say about us</h3>
-            <div class="testcards">
-                <div class="test">
-                    <div class="tImg">
-                        <img src="./images/testimonial-1.jpeg" alt="Jane D">
-                    </div>
-                    <div class="con">
-                        <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
-                        <h2 aria-level="2">Jane D., Toronto</h2>
-                    </div>
-                </div>
-                <div class="test">
-                    <div class="tImg">
-                        <img src="./images/testimonial-2.jpeg" alt="Scott S">
-                    </div>
-                    <div class="con">
-                        <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
-                        <h2 aria-level="2">Scott S., Ottawa</h2>
-                    </div>
-                </div>
-                <div class="test">
-                    <div class="tImg">
-                        <img src="./images/testimonial-3.jpeg" alt="Susie F">
-                    </div>
-                    <div class="con">
-                        <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
-                        <h2 aria-level="2">Susie F., Ottawa</h2>
-                    </div>
-                </div>
+            <div class="con">
+              <p>
+                "Best coffee in Ottawa and the service is top notch. Would
+                highly recommend a visit."
+              </p>
+              <h2 aria-level="2">Susie F., Ottawa</h2>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- footer has horizontal rule that breaks the content from the main section from the footer. -->
     <footer role="contentinfo">
-        <hr>
-        <p>© My Coffee Company 2024</p>
+      <hr />
+      <p>© My Coffee Company 2024</p>
     </footer>
-</body>
+  </body>
 </html>

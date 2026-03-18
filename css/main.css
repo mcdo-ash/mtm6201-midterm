@@ -3,564 +3,645 @@
    License: none (public domain)
 */
 /* meyer reset for default styles */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* custom line height and a max width applied */
-body{
-    line-height: 1.3;
-    background-color: #f3f0e9;
-	margin: 0 auto;
-	max-width: 1200px;
-	font-family: "Karla";
+body {
+  line-height: 1.3;
+  background-color: #f3f0e9;
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: "Karla";
 }
 
 /* heading and nav custom font added after body for cascading to overwrite body text for headings*/
-h1, h2, h3, h4 ,h5, h6, nav{
-    font-family: "Lato"
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  font-family: "Lato";
 }
 /* mobile heading and text sizes */
-h1{
-    font-size: 2.027rem;
-	font-weight: 800;
+h1 {
+  font-size: 2.027rem;
+  font-weight: 800;
 }
 /* color applied to h2 with custom font size */
-h2{
-    font-size: 1.802rem;
-	color:#966f2c;
+h2 {
+  font-size: 1.802rem;
+  color: #966f2c;
 }
 /* font weight changed in these h styles to make it bolder, custom line height to adjust for some of the mockup details */
-h3{
-    font-size: 1.2rem;
-	font-weight: 700;
-	padding: 5px 0px 15px 0px;
-	line-height: 1.2
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 5px 0px 15px 0px;
+  line-height: 1.2;
 }
 
-p{
-    font-size: 1rem;
+p {
+  font-size: 1rem;
 }
 /* adds appearence of uppercase without sacrificing issues with text actually being uppercase for accessibility */
-h1, h2, h3, h4, nav{
-    text-transform:uppercase;
+h1,
+h2,
+h3,
+h4,
+nav {
+  text-transform: uppercase;
 }
 /* button given padding and margin to the top for spacing, the text transformed into uppercase. font family and weight applied for appearence. transition added for hover state. border and background color for button style. */
-.button{
-	padding: 12px 22px 12px 22px;
-	text-transform: uppercase;
-	border: none;
-	font-weight: 800;
-	font-family: "Karla";
-	cursor: pointer;
-	margin-top: 5px;
-	transition: all 0.5s;
-	border: 1px solid #ffffff;
-	background-color: #ffffff;
-	color:#000000;
-	align-self: center;
+.button {
+  padding: 12px 22px 12px 22px;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 800;
+  font-family: "Karla";
+  cursor: pointer;
+  margin-top: 5px;
+  transition: all 0.5s;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: #000000;
+  align-self: center;
 }
 /* button hover and focus states */
-.button:hover{
-	color:#d69e3d
+.button:hover {
+  color: #d69e3d;
 }
 
-.aboutcontent:focus{
-	color:#d69e3d
+.aboutcontent:focus {
+  color: #d69e3d;
 }
 /* images given a width of 100% so they fit their containers */
-img{
-	width:100%
+img {
+  width: 100%;
 }
 /* styling skip links so they are not visable when first opening site. */
-.skiplinks{
-	list-style: none;
-	margin: 0;
-	padding: 0;
+.skiplinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.skiplinks a{
-	position: absolute;
-	top: -3em;
-	background-color:#ffffff;
-	color:#000000;
-	padding: .5em 1em;
-	font-weight:bold;
+.skiplinks a {
+  position: absolute;
+  top: -3em;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.5em 1em;
+  font-weight: bold;
 }
 /* this brings skip links into viewport */
-.skiplinks a:focus{
-	top: 0;
+.skiplinks a:focus {
+  top: 0;
 }
 
 /* custom size for logo so it fits with mockup. transition applied for scale animation */
-.logoimg{
-	padding: 10px;
-	margin: 10px;
-	height: 30px;
-	transition: transform 0.5s;
-} 
-/* on hover, the logo of my coffee shop increases in size */
-.logoimg:hover{
-	transform: scale(1.5);
+.logoimg {
+  padding: 10px;
+  margin: 10px;
+  height: 30px;
+  transition: transform 0.5s;
 }
-
+/* on hover, the logo of my coffee shop increases in size */
+.logoimg:hover {
+  transform: scale(1.5);
+}
 
 /* nav with logo displayed flex in column to put it on top of nav list, items centered  */
-header{
-	background-color:#000000;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
+header {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* nav ul displayed flex to control how nav items appear in header, items centered with padding on the bottom for spacing. gap of 30px to space items apart */
-ul{
-	display:flex;
-	justify-content: center;
-	padding-bottom: 15px;
-	gap: 30px;
-	color:#ffffff
+ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  gap: 30px;
+  color: #ffffff;
 }
 /* nav link hover and focus states */
-li a:hover{
-	color:#d69e3d;
+li a:hover {
+  color: #d69e3d;
 }
 
-li a:focus{
-	color:#d69e3d;
+li a:focus {
+  color: #d69e3d;
 }
 /* removes underline on links */
-a{
-	text-decoration: none;
-	font-weight: 800;
+a {
+  text-decoration: none;
+  font-weight: 800;
 }
 /* makes links always stay white even after they've been clicked */
-a:link{
-	color:#ffffff;
+a:link {
+  color: #ffffff;
 }
 /* by making this color inherit, there is no longer a different color when you have visited a link */
-a:visited{
-	color:inherit ;
+a:visited {
+  color: inherit;
 }
 /* so sections have some room between, margin and padding top applied. */
-section{
-	margin-top: 50px;
-	padding-top: 20px;
+section {
+  margin-top: 50px;
+  padding-top: 20px;
 }
 /* position relative so text can sit over top with z-index. margins and padding set to 0 for spacing. background color as black for when the image has lowered opacity. color of white for the text. */
-.home{
-	position:relative;
-	padding:0px;
-	margin:0px;
-	color:#ffffff;
-	background-color: #000000;
+.home {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  color: #ffffff;
+  background-color: #000000;
 }
 /* negative z-index so content can sit overtop image, opacity brought down for content readability (and to match mockup) */
-.heroimg{
-	z-index: -1;
-	opacity: 0.4;
+.heroimg {
+  z-index: -1;
+  opacity: 0.4;
 }
 /* content displayed flex in column with a position absolute and a higher z-index so it sits overtop the image with the negative margin top. padding of 250 so the text sits tightly in the center */
-.homecon{
-	display:flex;
-	flex-direction: column;
-	text-align: center;
-	position:absolute;
-	padding:250px;
-	z-index: 4;
-	margin-top:-1000px;
-	gap: 10px;
+.homecon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  padding: 250px;
+  z-index: 4;
+  margin-top: -1000px;
+  gap: 10px;
 }
 
-.welcome{
-	padding: 10px;
+.welcome {
+  padding: 10px;
 }
 /* cards displayed grid with 2(technically 3) columns and rows and a gap of 16 for spacing */
-.cards{
-	display:grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	gap: 16px;
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
 }
 /* background size and position for all cards set with a class that is set on all cards */
-.card{
-	background-size: cover;
-	background-position: center;
+.card {
+  background-size: cover;
+  background-position: center;
 }
 /* cards have image applied as a css background. for mobile, only the first card is given grid row/column positions and the rest of the cards fit into place */
-.card1{
-	background-image:url(../images/latte.jpeg);
-	height:500px;
-	grid-row: 1/3;
-	grid-column: 1/3;
+.card1 {
+  background-image: url(../images/latte.jpeg);
+  height: 500px;
+  grid-row: 1/3;
+  grid-column: 1/3;
 }
 /* cards 2-5 given a height of half the height of the first card */
-.card2{
-	background-image: url(../images/coffee-beans.jpeg);
-	height:250px;
+.card2 {
+  background-image: url(../images/coffee-beans.jpeg);
+  height: 250px;
 }
 
-.card3{
-	background-image: url(../images/pouring-coffee.jpeg);
-	height:250px;
+.card3 {
+  background-image: url(../images/pouring-coffee.jpeg);
+  height: 250px;
 }
 
-.card4{
-	background-image: url(../images/three-cups.jpeg);
-	height:250px;
+.card4 {
+  background-image: url(../images/three-cups.jpeg);
+  height: 250px;
 }
 
-.card5{
-	background-image:url(../images/smiling-employee.jpeg);
-	height:250px;
+.card5 {
+  background-image: url(../images/smiling-employee.jpeg);
+  height: 250px;
 }
 /* section given padding and text centered */
-.offers{
-	padding:0px 0px 0px 10px;
-	text-align: center;
+.offers {
+  padding: 0px 0px 0px 10px;
+  text-align: center;
 }
 /* offer icons and content displayed in grid and centered, padding and gap applied for spacing*/
-.offer{
-	padding: 10px;
-	display:grid;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding: 50px;
-	gap: 50px;
+.offer {
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  gap: 50px;
 }
 /* icon given a set height so it fits nicely in all screen sizes */
-.icon{
-	height: 150px;
+.icon {
+  height: 150px;
 }
 /* menu and location section also given positon relative so content can go overtop. padding top is 0 for spacing and background color is black also for when the opacity is set down on image */
-.menuloc{
-	position:relative;
-	background-color: #000000;
-	padding-top:0;
-
+.menuloc {
+  position: relative;
+  background-color: #000000;
+  padding-top: 0;
 }
 /* image opacity for blending */
-.menulocimg{
-	opacity: 0.4;
+.menulocimg {
+  opacity: 0.4;
 }
 /* menu and location content given position absolute so it sits on top of the image. displayed flex in column so the sizes of each items can be manipulated. margin top negative so it can sit on image. margin left is for a strange spacing issue. gap is also for the contents spacing */
-.menuloccon{
-	position:absolute;
-	display:flex;
-	flex-direction: column;
-	text-align: center;
-	margin-top:-320px;
-	margin-left: 150px;
-	gap: 15px;
+.menuloccon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -320px;
+  margin-left: 150px;
+  gap: 15px;
 }
 
 /* this h3 sits on a darker background so it needs to be in white */
-.menuloc h3{
-	color: #ffffff;
+.menuloc h3 {
+  color: #ffffff;
 }
 /* menu and location content in flex with column for top to bottom */
-#menu{
-	display:flex;
-	flex-direction: column;
+#menu {
+  display: flex;
+  flex-direction: column;
 }
 
-#location{
-	display:flex;
-	flex-direction: column;
+#location {
+  display: flex;
+  flex-direction: column;
 }
 /* location button in mockup is transparent */
-#location .button{
-	background-color:transparent;
-	color:#ffffff
+#location .button {
+  background-color: transparent;
+  color: #ffffff;
 }
 /* the location button no longer had hover and focus states when the transparency was applied, this fixes that. */
-#location .button:hover{
-	color:#d69e3d;
+#location .button:hover {
+  color: #d69e3d;
 }
 
-#location .button:focus{
-	color:#d69e3d;
+#location .button:focus {
+  color: #d69e3d;
 }
 
-#about{
-	padding: 10px;
+#about {
+  padding: 10px;
 }
 /* about content given flex with column mainly for the button sizing, as all other content fits. */
-.aboutcontent{
-	display:flex;
-	flex-direction: column;
+.aboutcontent {
+  display: flex;
+  flex-direction: column;
 }
 /* about button is black with white text because it sits on white background. */
-.aboutcontent .button{
-	border: 1px solid #ffffff;
-	background-color: #000000;
-	color: #ffffff;
+.aboutcontent .button {
+  border: 1px solid #ffffff;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* makes button sit on the flex start rather than following the centered alignment */
-.aboutcontent .button{
-	align-self: flex-start;
+.aboutcontent .button {
+  align-self: flex-start;
 }
 /* about button was given different styling, so its hover and focus states also stopped working, this fixes that. */
-.aboutcontent .button:hover{
-	color:#d69e3d
+.aboutcontent .button:hover {
+  color: #d69e3d;
 }
 
-.aboutcontent .button:focus{
-	color:#d69e3d
+.aboutcontent .button:focus {
+  color: #d69e3d;
 }
 /* about image given specific height to make it fit with content */
-#aboutimg{
-	height:566px;
+#aboutimg {
+  height: 566px;
 }
 /* this makes the paragraphs in the about content more spaced out rather than sitting directly on one another */
-.aboutcontent p{
-	margin-bottom: 10px;
+.aboutcontent p {
+  margin-bottom: 10px;
 }
 
 /* gives testimonials section black background with white text */
-.testimonials{
-	padding: 10px;
-	background-color:#000000;
-	color: #ffffff;
+.testimonials {
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
 }
 /* textcards in flex because they only sit top to bottom or left to right in different screen sizes. gap puts space between flex items(cards) */
-.testcards{
-	display:flex;
-	flex-direction: column;
-	gap: 15px;
+.testcards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 /* testimonial cards all have test class and position relative with z-index so the content will sit on top of images */
-.test{
-	position: relative;
-	z-index: 1;
+.test {
+  position: relative;
+  z-index: 1;
 }
 /* z-index is negative so the content goes over top, opacity is turned down for the testimonials to ledgible, height percentage turned down so the card fits closer to the mockup(as much as I am capable of) */
-.tImg{
-	z-index: -1;
-	opacity:0.65;
-	height: 70%;
+.tImg {
+  z-index: -1;
+  opacity: 0.65;
+  height: 70%;
 }
 /* content has absolute position with higher z-index so it overlaps the image. bottom, padding and margin added for spacing. */
-.con{
-	position:absolute;
-	z-index: 5;
-	bottom:30px;
-	padding:10px;
-	margin: 4px;
+.con {
+  position: absolute;
+  z-index: 5;
+  bottom: 30px;
+  padding: 10px;
+  margin: 4px;
 }
 /* footer given black background color, white text color, and text is centered. margin and padding for spacing. */
-footer{
-	background-color: #000000;
-	color:#ffffff;
-	margin: 0px;
-	padding: 10px;
-	text-align: center;
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
 }
 /* changing the padding of the footer padding to fit mockup */
-footer p{
-	padding: 8px 0 30px;
+footer p {
+  padding: 8px 0 30px;
 }
 /* the horizontal rule that breaks up the footer and testimonials section given 0 padding and margin to fix the gap that would happen without this fix */
-hr{
-	margin: 0;
-	padding: 0;
-	
+hr {
+  margin: 0;
+  padding: 0;
 }
-
-
 
 /* tablet screen size styling */
-@media (min-width: 768px){
-	/* font sizes for tablet screen size */
-	h1{
-		font-size:2.986rem;
-	}
+@media (min-width: 768px) {
+  /* font sizes for tablet screen size */
+  h1 {
+    font-size: 2.986rem;
+  }
 
-	h2{
-		font-size:1.2rem;
-	}
+  h2 {
+    font-size: 1.2rem;
+  }
 
-	h3{
-		font-size:2.488rem;
-	}
+  h3 {
+    font-size: 2.488rem;
+  }
 
-	p{
-		font-size:1rem;
-	}
-	/* cards given 11(technically 12) columns so that the cards sit in the opposite formation(from vertical to horizontal) */
-	.cards{
-		grid-template-columns: repeat(11, 1fr);
-		grid-template-rows: 1fr 1fr;
-	}
-	/* first card given height difference of 16px to account for the gap that is applied to the grid. cards positioned in horizontal formation */
-	.card1{
-		height:516px;
-		grid-row: 1/3;
-		grid-column: 1/6;
-	}
+  p {
+    font-size: 1rem;
+  }
+  /* cards given 11(technically 12) columns so that the cards sit in the opposite formation(from vertical to horizontal) */
+  .cards {
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  /* first card given height difference of 16px to account for the gap that is applied to the grid. cards positioned in horizontal formation */
+  .card1 {
+    height: 516px;
+    grid-row: 1/3;
+    grid-column: 1/6;
+  }
 
-	.card2{
-		grid-row:1/2;
-		grid-column:6/9;
-	}
+  .card2 {
+    grid-row: 1/2;
+    grid-column: 6/9;
+  }
 
-	.card3{
-	
-		grid-row:1/2;
-		grid-column:9/12;
-	}
+  .card3 {
+    grid-row: 1/2;
+    grid-column: 9/12;
+  }
 
-	.card4{
-	
+  .card4 {
+    grid-row: 2/3;
+    grid-column: 6/9;
+  }
 
-		grid-row: 2/3;
-		grid-column:6/9;
-	}
+  .card5 {
+    grid-row: 2/3;
+    grid-column: 9/12;
+  }
+  /* offers content columns increased to 4(technically 5) for the triangular formation on tablet screen size */
+  .offer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+  }
+  /* fair, local and love content placed in triangle formation */
+  .fair {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
 
-	.card5{
-	
-		grid-row:2/3;
-		grid-column:9/12;
-	}
-	/* offers content columns increased to 4(technically 5) for the triangular formation on tablet screen size */
-	.offer{
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 1fr 1fr;
-		text-align: center;
-	}
-	/* fair, local and love content placed in triangle formation */
-	.fair{
-		grid-column:1/3;
-		grid-row:1/2;
-	}
-
-	.local{
-		grid-column: 3/5;
-		grid-row: 1/2;
-	}
-	/* love centered in bottom of triangle. */
-	.love{
-		grid-row:2/3;
-		grid-column:2/4;
-		align-self:center;
-		justify-self: center;
-	}
-	/* flex direction changed to row so it now is left to right rather than top to bottom. padding and margin adjusted so the content sits on top of image. */
-	.menuloccon{
-		flex-direction: row;
-		padding: 50px;
-		margin-top:-450px;
-		margin-left:0px;
-	}
-	/* about section in flex for control of flex items. gap adjusted for space between. */
-	#about{
-		display:flex;
-		gap: 15px;
-	}
-	/* about image given custom size to fit with content better. */
-	#aboutimg{
-		height:500px;
-		width: 400px;
-	}
-	/* testimonials in flex with direction of row for left to right rather than top to bottom in mobile. */
-	.testcards{
-		display:flex;
-		flex-direction: row;
-	}
+  .local {
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+  /* love centered in bottom of triangle. */
+  .love {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    align-self: center;
+    justify-self: center;
+  }
+  /* flex direction changed to row so it now is left to right rather than top to bottom. padding and margin adjusted so the content sits on top of image. */
+  .menuloccon {
+    flex-direction: row;
+    padding: 50px;
+    margin-top: -450px;
+    margin-left: 0px;
+  }
+  /* about section in flex for control of flex items. gap adjusted for space between. */
+  #about {
+    display: flex;
+    gap: 15px;
+  }
+  /* about image given custom size to fit with content better. */
+  #aboutimg {
+    height: 500px;
+    width: 400px;
+  }
+  /* testimonials in flex with direction of row for left to right rather than top to bottom in mobile. */
+  .testcards {
+    display: flex;
+    flex-direction: row;
+  }
 }
 /* desktop screen size styling */
-@media (min-width: 1100px){
-	/* desktop font sizes */
-	h1{
-		font-size:3.815rem;
-	}
+@media (min-width: 1100px) {
+  /* desktop font sizes */
+  h1 {
+    font-size: 3.815rem;
+  }
 
-	h2{
-		font-size:1.253rem;
-	}
+  h2 {
+    font-size: 1.253rem;
+  }
 
-	h3{
-		font-size:2.052rem;
-	}
+  h3 {
+    font-size: 2.052rem;
+  }
 
-	p{
-		font-size:1rem;
-	}
-	/* header put in flex with direction row so it reads left to right rather than top to bottom like mobile and tablet screens. */
-	header{
-		display:flex;
-		flex-direction: row;
-	}
-	/* logo image size adjusted to fit in nav bar better on desktop. */
-	.logoimg{
-		height:22px;
-	}
-	/* nav list spacing adjusted to fit with header/nav bar. */
-	ul{
-		gap: 60px;
-		justify-content: center;
-		margin: 20px 100px 10px 0px;
-		padding-bottom:0;
-	}
-	/* because the first nav item has 2 words, it was going one word on top of the other, using white-space: nowrap, it flattens out to one line. */
-	ul:first-child{
-		white-space: nowrap;
-	}
-	/* home padding removed to adjust spacing issues. */
-	.home{
-		padding: 0px;
-	}
-	/* offers in flex rather than grid because on desktop it is left to right rather than top to bottom or triangular. */
-	.offer{
-		display:flex;
-	}
-	/* about margin adjusted to have space around section. */
-	#about{
-		margin:90px;
-	}
-	/* testimonials padding adjusted because it has background color. this way it has the same time of spacing as about but fits with background color. */
-	.testimonials{
-		padding:90px;
-	}
+  p {
+    font-size: 1rem;
+  }
+  /* header put in flex with direction row so it reads left to right rather than top to bottom like mobile and tablet screens. */
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  /* logo image size adjusted to fit in nav bar better on desktop. */
+  .logoimg {
+    height: 22px;
+  }
+  /* nav list spacing adjusted to fit with header/nav bar. */
+  ul {
+    gap: 60px;
+    justify-content: center;
+    margin: 20px 100px 10px 0px;
+    padding-bottom: 0;
+  }
+  /* because the first nav item has 2 words, it was going one word on top of the other, using white-space: nowrap, it flattens out to one line. */
+  ul:first-child {
+    white-space: nowrap;
+  }
+  /* home padding removed to adjust spacing issues. */
+  .home {
+    padding: 0px;
+  }
+  /* offers in flex rather than grid because on desktop it is left to right rather than top to bottom or triangular. */
+  .offer {
+    display: flex;
+  }
+  /* about margin adjusted to have space around section. */
+  #about {
+    margin: 90px;
+  }
+  /* testimonials padding adjusted because it has background color. this way it has the same time of spacing as about but fits with background color. */
+  .testimonials {
+    padding: 90px;
+  }
 }
