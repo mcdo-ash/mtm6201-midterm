@@ -392,7 +392,7 @@ hr{
 
 /* tablet screen size styling */
 @media (min-width: 768px){
-
+	/* font sizes for tablet screen size */
 	h1{
 		font-size:2.986rem;
 	}
@@ -408,16 +408,16 @@ hr{
 	p{
 		font-size:1rem;
 	}
-
+	/* cards given 11(technically 12) columns so that the cards sit in the opposite formation(from vertical to horizontal) */
 	.cards{
-	grid-template-columns: repeat(11, 1fr);
-	grid-template-rows: 1fr 1fr;
+		grid-template-columns: repeat(11, 1fr);
+		grid-template-rows: 1fr 1fr;
 	}
-
+	/* first card given height difference of 16px to account for the gap that is applied to the grid. cards positioned in horizontal formation */
 	.card1{
-	height:516px;
-	grid-row: 1/3;
-	grid-column: 1/6;
+		height:516px;
+		grid-row: 1/3;
+		grid-column: 1/6;
 	}
 
 	.card2{
@@ -443,14 +443,13 @@ hr{
 		grid-row:2/3;
 		grid-column:9/12;
 	}
-
+	/* offers content columns increased to 4(technically 5) for the triangular formation on tablet screen size */
 	.offer{
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 1fr 1fr;
-		justify-content: left;
 		text-align: center;
 	}
-
+	/* fair, local and love content placed in triangle formation */
 	.fair{
 		grid-column:1/3;
 		grid-row:1/2;
@@ -460,31 +459,31 @@ hr{
 		grid-column: 3/5;
 		grid-row: 1/2;
 	}
-
+	/* love centered in bottom of triangle. */
 	.love{
 		grid-row:2/3;
 		grid-column:2/4;
 		align-self:center;
 		justify-self: center;
 	}
-
+	/* flex direction changed to row so it now is left to right rather than top to bottom. padding and margin adjusted so the content sits on top of image. */
 	.menuloccon{
 		flex-direction: row;
 		padding: 50px;
 		margin-top:-450px;
 		margin-left:0px;
 	}
-
+	/* about section in flex for control of flex items. gap adjusted for space between. */
 	#about{
 		display:flex;
 		gap: 15px;
 	}
-	
+	/* about image given custom size to fit with content better. */
 	#aboutimg{
 		height:500px;
 		width: 400px;
 	}
-
+	/* testimonials in flex with direction of row for left to right rather than top to bottom in mobile. */
 	.testcards{
 		display:flex;
 		flex-direction: row;
